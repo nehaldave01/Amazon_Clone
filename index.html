@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <!-- logo -->
+            <div class="nav-bx1 border">
+                <img src="img/logo1.png" alt="" width="100%">
+            </div>
+            <!-- address -->
+            <div class="nav-bx2 border">
+                <p class="text1">Deliver to John</p>
+               <div class="location-icon"><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i> 
+                <p class="text2">India</p>
+            </div>
+            </div>
+            <!-- search bar -->
+            <div class="nav-bx3 border">
+                 <select class="search-select">
+                    <option>All</option>
+                 </select>
+                 <input type="text" placeholder="Search Amazon.in" class="search-input">
+                 <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass" style="font-size: large;"></i>
+                 </div>
+            </div>
+            <!-- lang -->
+            <div class="nav-bx4">
+                <div class="lang border">
+                    <img src="img/ind flag.jpg" alt="" width="30%" height="40%" >
+                    <div class="en">EN</div>
+                </div>
+                <!-- account holder name -->
+                <div class="acc-holder border">
+                    <p style="font-size: 12px; color: white;">Hello,John</p>
+                    <p style="font-size: 14px; color: white; font-weight: bold;">Account & Lists</p>
+                </div>
+                <!-- returns & order -->
+                <div class="return-order border">
+                    <p style="font-size: 12px; color: white;">Returns</p>
+                    <p style="font-size: 14px; color: white; font-weight: bold;">& Orders</p>
+                </div>
+                <!-- cart -->
+                <div class="cart border">
+                    <i class="fa-solid fa-cart-arrow-down" style="color: #ffffff; font-size: x-large;"></i>
+                    <p style="font-weight: bold; color: white;">Cart</p>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+
+    <!-- Menu section -->
+    <section class="menu-sec">
+          <div class="menu1">
+         <ul type="none" style="display: flex; gap: 15px;">
+            <li><a href=""></a>
+                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                All</li>
+            <li><a href=""></a>Buy Again</li>
+            <li><a href=""></a>Home & Kitchen</li>
+            <li><a href=""></a>Home Improvement</li>
+            <li><a href=""></a>Amazon miniTv</li>
+            <li><a href=""></a>Sell</li>
+            <li><a href=""></a>Gift Ideas</li>
+            <li><a href=""></a>Amazon Pay</li>
+            <li><a href=""></a>AmazonBasics</li>
+        </ul>
+          </div>
+          <div class="menu2">
+            <p >New Launches from Mobiles, Electronics & more | Shop Now</p>
+          </div>
+    </section>
+
+    <!-- Img section -->
+    <section class="fade-img">
+        <img src="img/banner1.jpg" class="slide" width="100%" height="100%">
+        <img src="img/banner2.jpg" class="slide" width="100%" height="100%">
+        <img src="img/banner3.jpg" class="slide" width="100%" height="100%">
+        <img src="img/banner4.jpg" class="slide" width="100%" height="100%">
+        <img src="img/banner6.jpg" class="slide" width="100%" height="100%">
+        <div class="banner-btn">
+            <div class="ban-leftarrow">
+                <img src="img/arrow.png" alt="" width="100%" height="100%" onclick="controller(-1)">
+            </div>
+            <div class="ban-rightarrow">
+                <img src="img/arrow.png" alt="" width="100%" height="100%" onclick="controller(1)">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- section 1 -->
+    <section class="keep-shop">
+        <div class="keep-shop-for">
+            <h3>Keep shopping for</h3>
+            <div class="big-bx">
+                <div class="bx1">
+                    <!-- img -->
+                    <div class="img-bx">
+                        <img src="img/car1.jpg" alt="" width="100%" style="margin-top: 5px;">
+                    </div>
+                    <!-- text -->
+                    <div class="text-bx">
+                        <p style="font-size: 14px; font-weight: 600;">Toys and Games</p>
+                        <p style="font-size: 10px; color: grey;">1 Viewed</p>
+                    </div>
+                </div>
+
+                <div class="bx1">
+                    <!-- img -->
+                    <div class="img-bx">
+                        <img src="img/boots2.jpg" width="100%" height="100%" alt="" >
+                    </div>
+                    <!-- text -->
+                    <div class="text-bx">
+                        <p style="font-size: 14px; font-weight: 600;">Men's Boot</p>
+                        <p style="font-size: 10px; color: grey;">1 Viewed</p>
+                    </div>
+                </div>
+                
+             </div>
+             <div class="big-bx">
+                <div class="bx1">
+                    <!-- img -->
+                    <div class="img-bx">
+                        <img src="img/pink hoodie3.jpg" alt="" width="80%" height="90%">
+                    </div>
+                    <!-- text -->
+                    <div class="text-bx">
+                        <p style="font-size: 14px; font-weight: 600;">Sweatshirt</p>
+                        <p style="font-size: 10px; color: grey;">1 Viewed</p>
+                    </div>
+                </div>
+                <div class="bx1">
+                    <!-- img -->
+                    <div class="img-bx">
+                        <img src="img/coupl tshirts4.jpg" alt="" width="80%" height="90%">
+                    </div>
+                    <!-- text -->
+                    <div class="text-bx">
+                        <p style="font-size: 14px; font-weight: 600;">Couple T-shirts</p>
+                        <p style="font-size: 10px; color: grey;">1 Viewed</p>
+                    </div>
+                </div>
+             </div>
+        </div>
+        <div class="keep-shop-for">
+            <h3>Pick up where you left off</h3>
+            <div class="big-bx">
+                <div class="bx1">
+                    <!-- img -->
+                    <div class="img-bx">
+                        <img src="img/bx2.1.jpg" alt="" width="100%" height="100%" style="margin-top: 5px;">
+                    </div>
+                    <!-- text -->
+                    <div class="text-bx">
+                        <p style="font-size: 14px; font-weight: 600;">Unisex T-shirts</p>
+                    </div>
+                </div>
+
+                <div class="bx1">
+                    <!-- img -->
+                    <div class="img-bx">
+                        <img src="img/bx2.2.jpg" width="100%" height="100%" alt="" >
+                    </div>
+                    <!-- text -->
+                    <div class="text-bx">
+                        <p style="font-size: 14px; font-weight: 600;">Filmy Vastra </p>
+                    </div>
+                </div>
+                
+             </div>
+             <div class="big-bx">
+                <div class="bx1">
+                    <!-- img -->
+                    <div class="img-bx">
+                        <img src="img/bx2.3.jpg" alt="" width="80%" height="90%">
+                    </div>
+                    <!-- text -->
+                    <div class="text-bx">
+                        <p style="font-size: 14px; font-weight: 600;">The Tee Store</p>
+                    </div>
+                </div>
+                <div class="bx1">
+                    <!-- img -->
+                    <div class="img-bx">
+                        <img src="img/bx2.4.jpg" alt="" width="80%" height="90%">
+                    </div>
+                    <!-- text -->
+                    <div class="text-bx">
+                        <p style="font-size: 14px; font-weight: 600;">Couple T-shirts</p>
+                    </div>
+                </div>
+             </div>
+        </div>
+        <div class="keep-shop-for">
+            <h3>Deals for you in Home</h3>
+            <div class="big-bx">
+                <div class="bx1">
+                    <!-- img -->
+                    <div class="img-bx">
+                        <img src="img/bx3.1.jpg" alt="" width="40%" height="100%"  style="margin-top: 5px; margin: auto;">
+                    </div>
+                    <!-- text -->
+                    <div class="offer-bx">
+                         <div class="red-bx">
+                            <p style="color: white; font-size: 12px; font-weight: 600; text-align: center; margin-top: 5px;">50% OFF</p>
+                        </div>
+                         <div class="limied-offer">Limited Time Deal</div>
+                    </div>
+                </div>
+
+                <div class="bx1">
+                    <!-- img -->
+                    <div class="img-bx">
+                        <img src="img/bx3.2.jpg" width="100%" height="100%" alt="" >
+                    </div>
+                    <!-- text -->
+                    <div class="offer-bx">
+                        <div class="red-bx">
+                            <p style="color: white; font-size: 12px; font-weight: 600; text-align: center; margin-top: 5px;">50% OFF</p>
+                        </div>
+                         <div class="limied-offer">Limited Time Deal</div>
+                    </div>
+                </div>
+                
+             </div>
+             <div class="big-bx">
+                <div class="bx1">
+                    <!-- img -->
+                    <div class="img-bx">
+                        <img src="img/bx3.3.jpg" alt="" width="100%" height="100%">
+                    </div>
+                    <!-- text -->
+                    <div class="offer-bx">
+                        <div class="red-bx">
+                            <p style="color: white; font-size: 12px; font-weight: 600; text-align: center; margin-top: 5px;">50% OFF</p>
+                        </div>
+                         <div class="limied-offer">Limited Time Deal</div>
+                    </div>
+                </div>
+                <div class="bx1">
+                    <!-- img -->
+                    <div class="img-bx">
+                        <img src="img/bx3.4.jpg" alt="" width="100%" height="100%">
+                    </div>
+                    <!-- text -->
+                    <div class="offer-bx">
+                        <div class="red-bx">
+                            <p style="color: white; font-size: 12px; font-weight: 600; text-align: center; margin-top: 5px;">50% OFF</p>
+                        </div>
+                         <div class="limied-offer">Limited Time Deal</div>
+                    </div>
+                </div>
+             </div>
+        </div>
+        <div class="sell-sec">
+            <div class="sell-sec1">
+                <div class="sellingfee-bx1">
+                    <h2>Get 50% off on Selling fee</h2>
+                    <p style="font-size: 12px; color: #2292C0; line-height: 25px;"><a href="">Become a Seller</a></p>
+                </div>
+                <div class="sellingfee-bx2">
+                    <img src="img/sell-img.jpg_" alt="" width="100%" height="100%">
+                </div>
+            </div>
+            <div class="sell-sec2">
+                <div class="sellingfee-bx3">
+                    <img src="img/fire boltt  logo.png" alt="" width="40%">
+                    <img src="img/fireboalt watch.jpg" alt="" width="40%" height="100%">
+                </div>
+                <div class="sellingfee-bx4">
+                    <p style="font-size: 12px; color: rgb(53, 53, 53);">Fire-Boltt Newly Launched Gladiator + 1.96" AMOLED display Luxury Smartwatch, Rotating Crown, 115+...</p>
+                    <img src="img/rating.png" alt="" width="40%" height="30%">
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- section 2 -->
+    <section class="movie-sec">
+        <div class="movie-ad">
+           <img src="img/movie ad.jpg" alt="" width="100%" height="100%">
+        </div>
+                <div class="buy-again">
+            <h3>Buy again</h3>
+            <div class="big-bx">
+                <div class="bx1">
+                    <!-- img -->
+                    <div class="img-bx">
+                        <img src="img/induleka.jpg" alt="" width="100%" style="margin-top: 5px;">
+                    </div>
+                    
+                </div>
+
+                <div class="bx1">
+                    <!-- img -->
+                    <div class="img-bx" style="margin-top: 50px;">
+                        <img src="img/pad.jpg" width="100%" height="60%" alt="" >
+                    </div>
+                    
+                </div>
+                
+             </div>
+             <div class="big-bx">
+                <div class="bx1">
+                    <!-- img -->
+                    <div class="img-bx">
+                        <img src="img/clothing rack.jpg" alt="" width="100%" height="100%">
+                    </div>
+                </div>
+                <div class="bx1">
+                    <!-- img -->
+                    <div class="img-bx" style="margin-left: 20px;">
+                        <img src="img/facewash.jpg" alt="" width="60%" height="100%">
+                    </div>
+                </div>
+             </div>
+             <p>Shop your everyday essentials</p>
+             <p style="color: #2292C0; font-size: 12px; margin-top: 10px;"><a href=""></a>See More</p>
+                </div>
+
+                <div class="buy-again">
+                    <h3>4+ star deals for you</h3>
+                    <div class="big-bx">
+                        <div class="bx1">
+                            <!-- img -->
+                            <div class="img-bx" style="margin-left: 30px;">
+                                <img src="img/4starprod1.jpg" alt="" width="60%" height="90%" style="margin-top: 5px;">
+                            </div>
+                            <!-- text -->
+                            <div class="offer-bx">
+                                <div class="red-bx">
+                                   <p style="color: white; font-size: 12px; font-weight: 600; text-align: center; margin-top: 5px;">50% OFF</p>
+                               </div>
+                                <div class="limied-offer">Limited Time Deal</div>
+                           </div>
+                        </div>
+        
+                        <div class="bx1">
+                            <!-- img -->
+                            <div class="img-bx"style="margin-left: 30px;">
+                                <img src="img/4starprod2.jpg" width="60%" height="100%" alt="" >
+                            </div>
+                            <!-- text -->
+                            <div class="offer-bx">
+                                <div class="red-bx">
+                                   <p style="color: white; font-size: 12px; font-weight: 600; text-align: center; margin-top: 5px;">50% OFF</p>
+                               </div>
+                                <div class="limied-offer">Limited Time Deal</div>
+                           </div>
+                        </div>
+                        
+                     </div>
+                     <div class="big-bx">
+                        <div class="bx1">
+                            <!-- img -->
+                            <div class="img-bx" style="margin-left: 30px;">
+                                <img src="img/4starprod3.jpg" alt="" width="60%" height="90%">
+                            </div>
+                            <!-- text -->
+                            <div class="offer-bx">
+                                <div class="red-bx">
+                                   <p style="color: white; font-size: 12px; font-weight: 600; text-align: center; margin-top: 5px;">50% OFF</p>
+                               </div>
+                                <div class="limied-offer">Limited Time Deal</div>
+                           </div>
+                        </div>
+                        <div class="bx1">
+                            <!-- img -->
+                            <div class="img-bx" style="margin-left: 30px;">
+                                <img src="img/4starprod4.jpg" alt="" width="80%" height="90%">
+                            </div>
+                            <!-- text -->
+                            <div class="offer-bx">
+                                <div class="red-bx">
+                                   <p style="color: white; font-size: 12px; font-weight: 600; text-align: center; margin-top: 5px;">50% OFF</p>
+                               </div>
+                                <div class="limied-offer">Limited Time Deal</div>
+                           </div>
+                        </div>
+                     </div>
+                     
+                     <p style="color: #2292C0; font-size: 12px; margin-top: 33px;"><a href=""></a>See More</p>
+                </div>
+        
+    </section>
+
+    <!-- section 3 -->
+    <section class="section3">
+        <div class="todays-deal">
+            <div class="heading-tag3">
+            <h3 style=" margin: 10px;">Today's Deals</h3>
+            <p style="font-size: 14px; color: #2292C0; margin-top: 15px;">See all deals</p>
+             </div>
+             <div class="todaydeals-row">
+                <div class="todaydeals-row1">
+                    <div class="grey-bg">
+                        <img src="img/todaysdeal1.jpg" alt="" width="70%" height="100%" style="margin-left: 30px;">
+                    </div>
+                   <!-- text -->
+                   <div class="offer-bx2">
+                    <div class="red-bx2">
+                       <p style="color: white; font-size: 12px; font-weight: 600; text-align: center; margin-top: 5px;">Up to 25% off</p>
+                   </div>
+                    <div class="limied-offer2">Deal of the Day</div>
+                    </div>
+                    <p style="font-size: 12px; margin: 0px 3px 0px 10px; font-weight: 500;">Great Deals on Heath and Sports....</p>
+                </div>
+                <div class="todaydeals-row1">
+                    <div class="grey-bg">
+                        <img src="img/todaysdeal2.jpg" alt="" width="80%" height="100%" style="margin-left: 20px;">
+                    </div>
+                   <!-- text -->
+                   <div class="offer-bx2">
+                    <div class="red-bx2">
+                       <p style="color: white; font-size: 12px; font-weight: 600; text-align: center; margin-top: 5px;">Up to 25% off</p>
+                   </div>
+                    <div class="limied-offer2">Deal of the Day</div>
+                    </div>
+                    <p style="font-size: 12px; margin: 0px 3px 0px 10px; font-weight: 500;">Great Deals on Heath and Sports....</p>
+                </div>
+                <div class="todaydeals-row1">
+                    <div class="grey-bg">
+                        <img src="img/todaysdeal3.jpg" alt="" width="70%" height="100%" style="margin-left: 20px;">
+                    </div>
+                   <!-- text -->
+                   <div class="offer-bx2">
+                    <div class="red-bx2">
+                       <p style="color: white; font-size: 12px; font-weight: 600; text-align: center; margin-top: 5px;">Up to 25% off</p>
+                   </div>
+                    <div class="limied-offer2">Deal of the Day</div>
+                    </div>
+                    <p style="font-size: 12px; margin: 0px 3px 0px 10px; font-weight: 500;">Great Deals on Heath and Sports....</p>
+                </div>
+                <div class="todaydeals-row1">
+                    <div class="grey-bg">
+                        <img src="img/todaysdeal4.jpg" alt="" width="70%" height="100%" style="margin-left: 35px;">
+                    </div>
+                   <!-- text -->
+                   <div class="offer-bx2">
+                    <div class="red-bx2">
+                       <p style="color: white; font-size: 12px; font-weight: 600; text-align: center; margin-top: 5px;">Up to 25% off</p>
+                   </div>
+                    <div class="limied-offer2">Deal of the Day</div>
+                    </div>
+                    <p style="font-size: 12px; margin: 0px 3px 0px 10px; font-weight: 500;">Great Deals on Heath and Sports....</p>
+                </div>
+                <div class="todaydeals-row1">
+                    <div class="grey-bg">
+                        <img src="img/todaysdeal5.jpg" alt="" width="100%" height="100%">
+                    </div>
+                   <!-- text -->
+                   <div class="offer-bx2">
+                    <div class="red-bx2">
+                       <p style="color: white; font-size: 12px; font-weight: 600; text-align: center; margin-top: 5px;">Up to 25% off</p>
+                   </div>
+                    <div class="limied-offer2">Deal of the Day</div>
+                    </div>
+                    <p style="font-size: 12px; margin: 0px 3px 0px 10px; font-weight: 500;">Great Deals on Heath and Sports....</p>
+                </div>
+                <div class="todaydeals-row1">
+                    <div class="grey-bg">
+                        <img src="img/todaysdeal6.jpg" alt="" width="70%" height="100%" style="margin-left: 30px;">
+                    </div>
+                   <!-- text -->
+                   <div class="offer-bx2">
+                    <div class="red-bx2">
+                       <p style="color: white; font-size: 12px; font-weight: 600; text-align: center; margin-top: 5px;">Up to 25% off</p>
+                   </div>
+                    <div class="limied-offer2">Deal of the Day</div>
+                    </div>
+                    <p style="font-size: 12px; margin: 0px 3px 0px 10px; font-weight: 500;">Great Deals on Heath and Sports....</p>
+                </div>
+             </div>
+             <div class="overlay-btn">
+                  <div class="btn-left">
+                    <img src="img/left-arrow.png" alt="" width="50%" height="20%" style="margin: 38px 10px  ;"> 
+                  </div>
+                  <div class="btn-right">
+                    <img src="img/right-arrow.png" alt="" width="50%" height="20%" style="margin: 38px 10px  ;"> 
+                  </div>
+             </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+       <!-- back to top button -->
+        <div class="backtotop">
+           <a href=""> <h5 class="back-text">Back to top</h5></a>
+        </div>
+
+        <!-- footer menu -->
+        <div class="footer-menu">
+            <div class="get-toknow">
+               <div class="menubox1">
+                <h4 class="know1" >Get To Know Us</h4>
+                <div class="knowpara1">
+                 <p><a href="">About us</a></p>
+                 <p><a href="">Careers</a></p>
+                 <p><a href="">Press Releases</a></p>
+                 <p><a href="">Amazon Science</a></p>
+                </div>
+               </div>
+
+               <div class="menubox1">
+                <h4 class="know1" >Connect With Us</h4>
+                <div class="knowpara1">
+                    <p><a href="">Facebook</a></p>
+                    <p><a href="">Twitter</a></p>
+                    <p><a href="">Instagram</a></p>
+                </div>
+               </div>
+
+              <div class="menubox1">
+                <h4 class="know1" >Make Money with Us</h4>
+                <div class="knowpara1">
+                    <p><a href="">Sell on Amazon</a></p>
+                    <p><a href="">Sell under Amazon Accelerator</a></p>
+                    <p><a href="">Protect and Build Your Brand</a></p>
+                    <p><a href="">Amazon Global Selling</a></p>
+                    <p><a href="">Become an Affiliate</a></p>
+                    <p><a href="">Fulfilment by Amazon</a></p>
+                    <p><a href="">Advertise Your Products</a></p>
+                    <p><a href="">Amazon Pay on Merchants</a></p>
+                    
+                </div>
+              </div>
+
+              <div class="menubox1">
+                <h4 class="know1" >Let us Help You</h4>
+                <div class="knowpara1">
+                    <p><a href="">Covid-19 and Amazon</a></p>
+                    <p><a href="">Your Account</a></p>
+                    <p><a href="">Returns Center</a></p>
+                    <p><a href="">100% Purchase Protection</a></p>
+                    <p><a href="">Amazon App Download</a></p>
+                    <p><a href="">Help</a></p>     
+                </div>
+              </div>
+            </div>
+            <div class="border-bottom"></div>
+            
+            <div class="foot-logo">
+                <div class="foot-amazonlogo">
+               <img src="img/Footer-amazon-logo.png" alt="" width="60%" height="50%">
+                </div>
+
+                <div class="lang-btn2">
+                   <div class="globe-icon">
+                    <i class="fa-solid fa-globe" style="color: #ffffff;"></i>
+                </div>
+                <p class="eng">English</p>
+                </div>
+            </div>
+            <div class="country">
+                <ul type="none">
+                    <li>Austraila</li>
+                    <li>Brazil</li>
+                    <li>Canada</li>
+                    <li>China</li>
+                    <li>France</li>
+                    <li>Germany</li>
+                    <li>Italy</li>
+                    <li>Japan</li>
+                    <li>Mexico</li>
+                    <li>Netherlands</li>
+                    <li>Poland</li>
+                    <li>Singapore</li>
+                    <li>Spain</li>
+                    <li>Turkey</li>
+                    <li>United Arab Emirates</li>
+                    <li>Unitedb Kingdom</li>
+                    <li>United States</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- footer menu2 -->
+        <div class="footer-menu2">
+            <div class="ebook-menu">
+                <!-- div1 -->
+                <div class="ebook-div">
+               <div class="ebook-heading">AbeBooks</div>
+                  <p class="ebook-sub">Books,art</p>
+                  <span class="span"><p>& collectibles</p></span>
+                <!--  -->
+                  <br> <br>
+                <!--  -->
+                  <div class="ebook-heading">Shopbop</div>
+                  <p class="ebook-sub">Designer</p>
+                  <span class="span"><p>Fashion Brands</p></span>
+               </div>
+
+               <!-- div2 -->
+               <div class="ebook-div">
+                <div class="ebook-heading">Amazon Web Services</div>
+                  <p class="ebook-sub">Scalable Cloud</p>
+                  <span class="span"><p>Computing Services</p></span>
+                <!--  -->
+                  <br> <br>
+                <!--  -->
+                  <div class="ebook-heading">Amazon Business</div>
+                  <p class="ebook-sub">Everything For</p>
+                  <span class="span"><p>Your Business</p></span>
+               </div>
+
+               <!-- div3 -->
+               <div class="ebook-div">
+                <div class="ebook-heading">Audible</div>
+                  <p class="ebook-sub">Download</p>
+                  <span class="span"><p>Audio Books</p></span>
+                <!--  -->
+                  <br> <br>
+                <!--  -->
+                  <div class="ebook-heading">Prime Now</div>
+                  <p class="ebook-sub">2 Hour Delivery</p>
+                  <span class="span"><p>on Everyday Items</p></span>
+               </div>
+
+               <!-- div4 -->
+               <div class="ebook-div">
+                <div class="ebook-heading">IMDb</div>
+                <p class="ebook-sub">Movies, TV</p>
+                <span class="span"><p>& Celebrities</p></span>
+              <!--  -->
+                <br> <br>
+              <!--  -->
+                <div class="ebook-heading">Amazon Prime Music</div>
+                <p class="ebook-sub">100 million songs, ad-free</p>
+                <span class="span"><p>Over 15 million podcast episodes</p></span>
+               </div>
+            </div>
+            <div class="privacy">
+                <div class="pri-terms">
+                    <p>Conditions of Use & Sale</p>
+                    <p>privacy Notice</p>
+                    <p>Interest-Based Ads</p>
+                </div>
+                   <p style="font-size: 12px; text-align: center; margin-top: 3px; color: grey;"> ------------This website is made for practice-purpose------------</p>
+            </div>
+        </div>
+    </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
